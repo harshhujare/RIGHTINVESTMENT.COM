@@ -1,0 +1,63 @@
+:root {
+  /* Primary Brand & Authority (from Right Investment logo) */
+  --color-primary: #0B2E8A;
+  --color-primary-hover: #08236B;
+  --color-on-primary: #FFFFFF;
+  --color-on-brand-muted: #DCE7FF;
+  --color-primary-soft: #EEF3FF;
+
+  /* Secondary / Deep Navy Ink */
+  --color-secondary: #0A1628;
+  --color-on-secondary: #FFFFFF;
+
+  /* Growth Green (Charts & Accessible Positive Badges) */
+  --color-growth-brand: #38982B; /* UI >= 3:1 & chart strokes ONLY */
+  --color-growth-text: #256F1C;  /* 6.23:1 AA on white */
+  --color-growth-soft: #EBF7E9;
+  --color-growth-pill-text: #1F6117; /* 6.84:1 AA on soft tint */
+
+  /* Warm Gold (Dark-surface highlights & dark-ink fills ONLY) */
+  --color-gold-brand: #E8A817;   /* NEVER use as text on white */
+  --color-gold-on-brand: #F2C249; /* 7.10:1 AAA on #0B2E8A */
+  --color-gold-text: #926207;    /* 5.29:1 AA on white */
+  --color-gold-soft: #FEF9EC;
+  --color-gold-pill-text: #8A5C06; /* 5.53:1 AA on soft tint */
+
+  /* Neutral Surfaces & Ink */
+  --color-background: #F8FAFC;
+  --color-foreground: #0A1628;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0A1628;
+  --color-muted: #F1F5F9;
+  --color-muted-foreground: #475569; /* 7.58:1 AAA on white */
+
+  /* Borders & Focus */
+  --color-border: #E2E8F0;
+  --color-border-input: #64748B; /* 4.76:1 AA for WCAG 1.4.11 UI boundaries */
+  --color-ring: #0B2E8A;
+
+  /* Semantic Destructive (Validation errors ONLY) */
+  --color-destructive: #B91C1C; /* 6.47:1 AA on white */
+  --color-destructive-soft: #FEF2F2;
+  --color-on-destructive: #FFFFFF;
+
+  /* Spacing & Layout Scale (Density 4/10 Standard) */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --header-height: 76px;
+
+  /* Swiss Elevation Shadows */
+  --shadow-sm: 0 1px 2px rgba(10, 22, 40, 0.05);
+  --shadow-md: 0 4px 10px rgba(10, 22, 40, 0.08);
+  --shadow-lg: 0 10px 20px rgba(10, 22, 40, 0.10);
+  --shadow-xl: 0 20px 28px rgba(10, 22, 40, 0.12);
+
+  /* Font Stacks */
+  --font-sans-en: var(--font-latin), 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-sans-mr: var(--font-devanagari), var(--font-latin), 'IBM Plex Sans Devanagari', 'Noto Sans Devanagari', sans-serif;
+}

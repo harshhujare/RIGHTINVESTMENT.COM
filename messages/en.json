@@ -1,0 +1,438 @@
+{
+  "brand": {
+    "name": "Right Investment",
+    "adviser": "Sachin Jagtap",
+    "tagline": "Personal Finance & Wealth Guidance",
+    "phoneLabel": "Call / WhatsApp",
+    "phoneNumber": "+91 95610 01821"
+  },
+  "nav": {
+    "skipToMain": "Skip to main content",
+    "home": "Home",
+    "services": "Services",
+    "about": "About Sachin",
+    "disclosures": "Disclosures",
+    "bookConsultation": "Book Consultation",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "menuTitle": "Navigation",
+    "languageSwitcherLabel": "Choose language"
+  },
+  "common": {
+    "learnMore": "Explore details",
+    "bookThisService": "Book review for this service",
+    "callNow": "Call +91 95610 01821",
+    "whatsappChat": "Message on WhatsApp",
+    "english": "English",
+    "marathi": "मराठी",
+    "placeholderNotice": "Sample placeholder — update with verified details before launch"
+  },
+  "metadata": {
+    "homeTitle": "Right Investment | Personal Finance & Wealth Guidance by Sachin Jagtap",
+    "homeDescription": "Goal-based Mutual Funds & SIP, Financial Planning, Insurance, and Tax Saving guidance by Sachin Jagtap in English and Marathi.",
+    "servicesTitle": "Advisory Services & SIP Goal Illustrator | Right Investment",
+    "servicesDescription": "Explore Mutual Funds & SIP, Financial Planning, Insurance protection, and Tax Saving & Portfolio Review with Right Investment.",
+    "aboutTitle": "About Sachin Jagtap | Right Investment",
+    "aboutDescription": "Meet Sachin Jagtap of Right Investment—discover a structured, transparent approach to Indian family financial planning.",
+    "consultationTitle": "Book a Consultation | Right Investment",
+    "consultationDescription": "Schedule a 30-minute consultation with Sachin Jagtap for SIPs, financial planning, insurance review, or tax-saving guidance.",
+    "disclosuresTitle": "Regulatory Disclosures & Grievance Redressal | Right Investment",
+    "disclosuresDescription": "Regulatory registration details, standard mutual fund and insurance disclosures, and investor grievance redressal links.",
+    "privacyTitle": "Privacy Notice | Right Investment",
+    "privacyDescription": "How Right Investment collects, protects, and uses consultation inquiry details."
+  },
+  "home": {
+    "hero": {
+      "badge": "English & Marathi Personal Finance Guidance",
+      "headline": "Structured Wealth Guidance for Every Stage of Your Family's Goals",
+      "typingPrefix": "Clarity across:",
+      "typingPhrases": [
+        "Mutual Funds & Step-Up SIPs",
+        "Goal-Based Financial Planning",
+        "Pure Term Life & Health Insurance",
+        "Tax Saving & Portfolio Review"
+      ],
+      "subheadline": "Work directly with Sachin Jagtap at Right Investment to align your Mutual Fund SIPs, life and health protection, tax efficiency, and long-term financial roadmap—without product push or jargon.",
+      "primaryCta": "Book Free 30-Min Consultation",
+      "secondaryCta": "Explore Core Services",
+      "directLine": "Prefer a quick call? Reach Sachin directly on",
+      "spotlight": {
+        "eyebrow": "Adviser Spotlight",
+        "name": "Sachin Jagtap",
+        "role": "Founder & Financial Adviser · Right Investment",
+        "portraitAlt": "Sachin Jagtap — Founder and Financial Adviser at Right Investment",
+        "focusHeading": "Four Pillars Under One Roof",
+        "focusItems": [
+          "Goal-linked Mutual Funds & Step-Up SIPs",
+          "Comprehensive Family Financial Roadmaps",
+          "Pure Term Life & Health Protection Review",
+          "ELSS Tax Efficiency & Portfolio Rebalancing"
+        ],
+        "bilingualPill": "Available in English & मराठी"
+      }
+    },
+    "services": {
+      "eyebrow": "Core Advisory Pillars",
+      "heading": "Four Pillars Designed Around Real Indian Household Goals",
+      "subtitle": "Every family financial decision—from monthly SIPs to family protection—works best when planned together rather than in silos.",
+      "cards": [
+        {
+          "slug": "mutual-funds",
+          "anchor": "mutual-funds",
+          "title": "Mutual Funds & SIP",
+          "summary": "Build long-term wealth steadily through disciplined equity, hybrid, and debt fund allocation tailored to your time horizon.",
+          "points": [
+            "Goal-linked monthly SIP & Step-Up planning",
+            "Balanced large, flexi-cap, hybrid, and debt mix",
+            "Avoid overlap and impulsive market-timing exits"
+          ]
+        },
+        {
+          "slug": "financial-planning",
+          "anchor": "financial-planning",
+          "title": "Financial Planning",
+          "summary": "Turn life milestones into concrete rupee targets covering emergency reserves, children's education, home goals, and retirement.",
+          "points": [
+            "Cash-flow & emergency fund sizing (6–12 months)",
+            "Inflation-adjusted education & retirement roadmaps",
+            "Annual review as income and family needs evolve"
+          ]
+        },
+        {
+          "slug": "insurance",
+          "anchor": "insurance",
+          "title": "Insurance",
+          "summary": "Protect your family's lifestyle and savings with adequate pure Term Life and Health Insurance before chasing returns.",
+          "points": [
+            "Human Life Value (HLV) term cover gap calculation",
+            "Family floater & super top-up health policy review",
+            "Honest review of existing traditional policies"
+          ]
+        },
+        {
+          "slug": "tax-portfolio",
+          "anchor": "tax-portfolio",
+          "title": "Tax Saving & Portfolio Review",
+          "summary": "Bring scattered policies, FDs, and funds into one clear review while optimizing eligible deductions and tax drag.",
+          "points": [
+            "ELSS & Section 80C / 80D planning in context",
+            "Existing mutual fund overlap & underperformer audit",
+            "Capital-gains-aware gradual rebalancing plan"
+          ]
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "How We Work",
+      "heading": "A Calm, 3-Step Advisory Process",
+      "subtitle": "No rushed pitches. Every engagement follows a clear, documented sequence.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Discovery & Financial Health Check",
+          "description": "In an initial 30-minute conversation, we understand your family responsibilities, income stability, existing policies, and upcoming milestones."
+        },
+        {
+          "number": "02",
+          "title": "Goal-Based Asset & Protection Plan",
+          "description": "You receive a clear action blueprint separating safety reserves, insurance protection, tax efficiency, and monthly SIP allocations."
+        },
+        {
+          "number": "03",
+          "title": "Execution & Periodic Portfolio Reviews",
+          "description": "As markets shift and life milestones approach, we review asset allocation regularly so your plan stays aligned without emotional decisions."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Client Perspectives",
+      "heading": "What Families Value About Working With Right Investment",
+      "subtitle": "Representative sample testimonials staged below—ready to be replaced with verified client feedback.",
+      "placeholderTag": "Sample Placeholder Testimonial",
+      "items": [
+        {
+          "quote": "Before meeting Sachin, I had six random policies and disconnected SIPs. Now our term protection, emergency fund, and retirement SIPs follow one clear plan.",
+          "name": "Salaried IT Professional",
+          "location": "Pune (Placeholder)"
+        },
+        {
+          "quote": "Being able to discuss financial decisions with my parents in Marathi made everyone confident. Nothing felt rushed or forced.",
+          "name": "Small Business Owner",
+          "location": "Satara (Placeholder)"
+        },
+        {
+          "quote": "During market volatility, having a calm portfolio check-in kept us from stopping our children's education SIP at the worst time.",
+          "name": "Medical Practitioner",
+          "location": "Navi Mumbai (Placeholder)"
+        }
+      ],
+      "viewAboutLink": "Read more about Sachin Jagtap's approach"
+    },
+    "banner": {
+      "eyebrow": "Start With Clarity",
+      "heading": "Ready for a Calm, Honest Review of Your Finances?",
+      "description": "Book a no-obligation 30-minute consultation in English or Marathi to review your SIPs, insurance adequacy, or tax-saving strategy.",
+      "primaryCta": "Schedule Consultation",
+      "secondaryCta": "WhatsApp +91 95610 01821"
+    }
+  },
+  "sip": {
+    "eyebrow": "Interactive Educational Tool",
+    "heading": "SIP & Goal Compounding Illustrator",
+    "subtitle": "Explore how disciplined monthly investing and time horizon can compound over the years. Adjust the sliders to test scenarios for your goals.",
+    "monthlyLabel": "Monthly SIP Amount",
+    "yearsLabel": "Investment Horizon (Years)",
+    "rateLabel": "Illustrative Annual Rate (%)",
+    "rateNote": "Illustrative assumption only — mutual fund returns fluctuate with markets and are never fixed.",
+    "yearsUnit": "Years",
+    "totalInvestedLabel": "Total Amount Invested",
+    "estimatedGainLabel": "Illustrative Wealth Gain",
+    "estimatedTotalLabel": "Illustrative Total Value",
+    "chartLegendInvested": "Amount Invested",
+    "chartLegendValue": "Illustrative Value",
+    "yearAxisPrefix": "Yr",
+    "showTable": "Show Year-by-Year Table",
+    "hideTable": "Hide Year-by-Year Table",
+    "tableYear": "Year",
+    "tableInvested": "Invested",
+    "tableGain": "Illustrative Gain",
+    "tableValue": "Illustrative Value",
+    "disclaimer": "For educational illustration only. Values are calculated using compound interest at the chosen illustrative rate and do not guarantee future mutual fund performance. Mutual Fund investments are subject to market risks, read all scheme related documents carefully.",
+    "ctaButton": "Discuss This Goal With Sachin",
+    "liveSummary": "At {monthly} per month for {years} years at {rate}% illustrative annual growth, invested capital of {invested} may illustrate {value}."
+  },
+  "servicesPage": {
+    "eyebrow": "Comprehensive Wealth Services",
+    "heading": "Advisory Services Built Around Your Life Goals",
+    "subtitle": "Explore each pillar in detail or jump directly to the area where you need clarity today.",
+    "jumpLabel": "Jump to service section",
+    "jumpCalculator": "SIP Illustrator",
+    "whoForLabel": "Ideal For",
+    "includedLabel": "What Is Included",
+    "cadenceLabel": "Review Rhythm",
+    "pillars": [
+      {
+        "slug": "mutual-funds",
+        "anchor": "mutual-funds",
+        "title": "Mutual Funds & SIP",
+        "tagline": "Disciplined wealth creation tailored to short-, medium-, and long-term goals.",
+        "whoFor": "Salaried professionals, business owners, and families building long-term wealth systematically without tracking stock tickers daily.",
+        "included": [
+          "Risk-profile assessment before selecting equity, hybrid, or debt categories",
+          "Step-Up SIP mapping so monthly investments grow alongside annual income",
+          "Lump-sum deployment strategy (STP where appropriate) for bonuses or property proceeds",
+          "Consolidated portfolio tracking to prevent duplicate scheme overlap"
+        ],
+        "cadence": "Semi-annual or annual allocation review, plus volatility hand-holding during sharp market swings."
+      },
+      {
+        "slug": "financial-planning",
+        "anchor": "financial-planning",
+        "title": "Financial Planning",
+        "tagline": "Connecting every rupee you earn to measurable family milestones.",
+        "whoFor": "Young couples, mid-career families, and pre-retirees who want one coherent plan instead of ad-hoc investments.",
+        "included": [
+          "Household cash-flow & surplus review with a dedicated emergency reserve plan",
+          "Children's higher education & marriage corpus sizing adjusted for education inflation",
+          "Retirement corpus & post-retirement monthly income sustainability planning",
+          "Debt prioritization checklist (home loans vs. high-cost consumer debt)"
+        ],
+        "cadence": "Annual goal progress audit and updates on major life events (marriage, childbirth, job switch)."
+      },
+      {
+        "slug": "insurance",
+        "anchor": "insurance",
+        "title": "Insurance",
+        "tagline": "Pure risk protection so unexpected medical or life events never derail your goals.",
+        "whoFor": "Earning members with financial dependents, aging parents, or outstanding loans.",
+        "included": [
+          "Pure Term Life Insurance sizing based on income replacement and liabilities",
+          "Family floater Health Insurance & Super Top-Up adequacy check",
+          "Critical illness / personal accident coverage gap analysis",
+          "Unbiased evaluation of existing endowment/money-back/ULIP policies"
+        ],
+        "cadence": "Reviewed at renewal cycles and whenever family size or loan liabilities change."
+      },
+      {
+        "slug": "tax-portfolio",
+        "anchor": "tax-portfolio",
+        "title": "Tax Saving & Portfolio Review",
+        "tagline": "Streamline legacy investments and align tax savings with long-term growth.",
+        "whoFor": "Taxpayers scrambling in March or investors holding 15+ scattered schemes without knowing true net returns.",
+        "included": [
+          "Section 80C (ELSS) & Section 80D planning aligned to your chosen tax regime",
+          "Portfolio health diagnostic highlighting overlapping, underperforming, or high-cost holdings",
+          "Exit-load & STCG/LTCG tax-aware cleanup roadmap",
+          "Consolidation of legacy investments into a simpler, trackable structure"
+        ],
+        "cadence": "Mid-year tax check (Oct–Dec) and structured portfolio cleanup every 12 months."
+      }
+    ]
+  },
+  "aboutPage": {
+    "eyebrow": "Meet Your Financial Adviser",
+    "heading": "Sachin Jagtap — Founder, Right Investment",
+    "intro": "Right Investment was built with a straightforward belief: Indian families deserve clear, honest, unhurried financial guidance in the language they think in—whether English or Marathi.",
+    "bioParagraphs": [
+      "Too many households end up holding mismatched insurance policies, redundant mutual funds, and last-minute tax-saving products bought from unrelated contacts. Without a unified strategy, hard-earned savings work below their potential.",
+      "At Right Investment, Sachin Jagtap works closely with salaried professionals, families, and small business owners to replace guesswork with structure: securing family risk first, mapping every SIP to a real milestone, and staying accountable through market cycles.",
+      "This profile section is ready for Sachin Jagtap's full personal biography and years of practice details."
+    ],
+    "portraitAlt": "Sachin Jagtap — Founder and Financial Adviser at Right Investment",
+    "credentialsTitle": "Credentials & Regulatory Slots",
+    "credentialsSubtitle": "Editable compliance slots—populate with verified numbers before going live.",
+    "credentials": [
+      {
+        "label": "AMFI Registration (ARN)",
+        "value": "ARN-XXXXXX (To be updated)"
+      },
+      {
+        "label": "EUIN",
+        "value": "E-XXXXXX (To be updated)"
+      },
+      {
+        "label": "IRDAI / PoSP Status",
+        "value": "IRDAI / PoSP ID (To be updated)"
+      },
+      {
+        "label": "Languages",
+        "value": "English, मराठी, हिंदी"
+      },
+      {
+        "label": "Direct Phone / WhatsApp",
+        "value": "+91 95610 01821"
+      },
+      {
+        "label": "Practice Location",
+        "value": "Maharashtra, India (Online & In-Person)"
+      }
+    ],
+    "viewDisclosuresLink": "View complete regulatory disclosures"
+  },
+  "consultationPage": {
+    "eyebrow": "Book Your Review",
+    "heading": "Schedule a Consultation With Sachin Jagtap",
+    "subtitle": "Share a few quick details below and we will reach out during your preferred time window. No spam calls, no automated sales sequences.",
+    "expectTitle": "What to Expect in Your 30-Minute Session",
+    "expectSteps": [
+      {
+        "title": "1. Listening First",
+        "detail": "Share your current savings, family responsibilities, and top financial questions without any judgment or pressure."
+      },
+      {
+        "title": "2. Practical Gap Check",
+        "detail": "We identify immediate gaps across emergency funds, insurance coverage, tax efficiency, and existing SIPs."
+      },
+      {
+        "title": "3. Clear Next Steps",
+        "detail": "Walk away with a clear summary of suggested priorities—you decide if and when you want ongoing advisory support."
+      }
+    ],
+    "directTitle": "Direct Contact Options",
+    "callLabel": "Call Directly",
+    "whatsappLabel": "WhatsApp Quick Chat",
+    "calendlyLabel": "Choose a Calendar Slot",
+    "officeLabel": "Consultation Hours & Mode",
+    "pledgeTitle": "Zero-Spam Privacy Pledge",
+    "pledgeCopy": "Your mobile number and financial context are seen solely by Sachin Jagtap at Right Investment and are never sold or shared with third-party aggregators.",
+    "form": {
+      "cardTitle": "Request a Consultation Callback",
+      "cardSubtitle": "Required fields are marked with *. Your draft is preserved automatically if you switch between English and Marathi.",
+      "errorSummaryTitle": "Please review the following details before submitting:",
+      "fullNameLabel": "Full Name *",
+      "fullNamePlaceholder": "e.g., Rohan Kulkarni",
+      "phoneLabel": "Mobile / WhatsApp Number *",
+      "phonePlaceholder": "e.g., 98765 43210",
+      "phoneHelper": "10-digit Indian mobile number (+91 supported).",
+      "emailLabel": "Email Address (Optional)",
+      "emailPlaceholder": "e.g., rohan@example.com",
+      "topicLabel": "Primary Area You Want to Discuss *",
+      "topics": {
+        "mutual-funds": "Mutual Funds & SIP",
+        "financial-planning": "Financial Planning",
+        "insurance": "Insurance (Term Life / Health)",
+        "tax-portfolio": "Tax Saving & Portfolio Review",
+        "general": "General Financial Review"
+      },
+      "preferredLanguageLabel": "Preferred Consultation Language *",
+      "callbackSlotLabel": "Preferred Callback Window *",
+      "slots": {
+        "morning": "Morning (10 AM – 1 PM)",
+        "afternoon": "Afternoon (1 PM – 4 PM)",
+        "evening": "Evening (4 PM – 7 PM)"
+      },
+      "notesLabel": "Brief Note on Your Goal (Optional)",
+      "notesPlaceholder": "e.g., Looking to start a ₹15,000/month SIP for retirement or review existing policies.",
+      "consentLabel": "I consent to Right Investment (Sachin Jagtap) contacting me via phone, WhatsApp, or email regarding my consultation request.",
+      "submitButton": "Request Consultation",
+      "submittingButton": "Sending Request...",
+      "errors": {
+        "nameRequired": "Please enter your full name.",
+        "nameTooShort": "Name must be at least 2 characters.",
+        "nameTooLong": "Name cannot exceed 100 characters.",
+        "phoneRequired": "Please enter your 10-digit mobile number.",
+        "phoneInvalid": "Enter a valid 10-digit Indian mobile number.",
+        "emailInvalid": "Enter a valid email address or leave this field blank.",
+        "notesTooLong": "Note must be under 1,000 characters.",
+        "consentRequired": "Please tick the consent box so we may contact you.",
+        "serverError": "We could not submit right now. Please try again or call +91 95610 01821.",
+        "rateLimited": "Too many requests from this session. Please wait a minute or message on WhatsApp."
+      },
+      "success": {
+        "title": "Consultation Request Received",
+        "description": "Thank you, {name}. Your request has been logged for {topic}. Sachin Jagtap will reach out during your {slot} preference.",
+        "referenceLabel": "Reference ID",
+        "demoNote": "Note: Email notifications activate once Resend credentials are added in deployment; you can also message directly on WhatsApp below.",
+        "whatsappFallback": "Message on WhatsApp Now",
+        "anotherRequest": "Submit Another Request"
+      }
+    }
+  },
+  "disclosuresPage": {
+    "eyebrow": "Compliance & Investor Protection",
+    "heading": "Regulatory Disclosures & Grievance Redressal",
+    "subtitle": "Right Investment maintains clear separation between advisory education, regulatory registration status, and statutory risk notices.",
+    "regCardTitle": "Registration & Practice Details (Editable Slots)",
+    "regNote": "Update the placeholders below inside src/lib/compliance.ts with Sachin Jagtap's verified AMFI ARN / EUIN, IRDAI / PoSP, or SEBI RIA registration numbers prior to public launch.",
+    "mfHeading": "Mutual Fund Risk Disclosure",
+    "mfBody": "Mutual Fund investments are subject to market risks, read all scheme related documents carefully. Past performance is not an indicator of future returns. Neither Right Investment nor Sachin Jagtap assures or guarantees any fixed rate of return on mutual fund schemes.",
+    "insuranceHeading": "Insurance Solicitation Notice",
+    "insuranceBody": "Insurance is the subject matter of solicitation. Policy benefits, exclusions, and claim settlements remain subject to the respective insurer's policy wordings and IRDAI regulations.",
+    "grievanceHeading": "Investor Grievance & Redressal Portals",
+    "grievanceBody": "If you have any service concern, please contact Sachin Jagtap directly at +91 95610 01821. For formal regulatory escalation, investors may also use official Indian redressal portals:",
+    "scoresLabel": "SEBI SCORES Portal",
+    "odrLabel": "SMART ODR Dispute Resolution",
+    "amfiLabel": "AMFI Investor Corner"
+  },
+  "privacyPage": {
+    "eyebrow": "Data Privacy (DPDP Act 2023)",
+    "heading": "Privacy Notice",
+    "subtitle": "How Right Investment handles the personal details you share while requesting a consultation.",
+    "sections": [
+      {
+        "title": "1. Information We Collect",
+        "body": "When you submit the consultation request form, we collect your name, phone number, optional email address, chosen advisory topic, preferred language, callback window, and any optional goal notes you voluntarily provide."
+      },
+      {
+        "title": "2. How Your Details Are Used",
+        "body": "Your details are used solely to contact you regarding your requested financial consultation and prepare relevant discussion points. Right Investment does not sell, rent, or distribute your contact data to telemarketers or third-party lead aggregators."
+      },
+      {
+        "title": "3. Data Deletion & Contact",
+        "body": "You may request correction or deletion of your inquiry details at any time by calling or messaging +91 95610 01821 or emailing our listed contact address."
+      }
+    ]
+  },
+  "footer": {
+    "description": "Calm, bilingual financial guidance for Indian families across Mutual Funds & SIP, Financial Planning, Insurance, and Tax & Portfolio Reviews.",
+    "quickLinksTitle": "Explore",
+    "servicesTitle": "Core Services",
+    "contactTitle": "Contact & Compliance",
+    "regulatoryTitle": "Regulatory Notice",
+    "riskDisclaimer": "Mutual Fund investments are subject to market risks, read all scheme related documents carefully.",
+    "insuranceDisclaimer": "Insurance is the subject matter of solicitation.",
+    "disclosuresLink": "Regulatory Disclosures",
+    "privacyLink": "Privacy Notice",
+    "copyright": "© {year} Right Investment · Sachin Jagtap. All rights reserved."
+  }
+}

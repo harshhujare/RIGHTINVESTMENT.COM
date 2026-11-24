@@ -59,9 +59,13 @@ export function ConsultationForm() {
   const urlTopic = searchParams.get('topic');
   const urlSip = searchParams.get('sip');
   const urlYears = searchParams.get('years');
+  const urlNote = searchParams.get('note');
 
   const initialTopic = normalizeTopic(urlTopic);
   const prefilledNote = React.useMemo(() => {
+    if (urlNote && urlNote.trim().length > 0) {
+      return urlNote.trim().slice(0, 800);
+    }
     if (!urlSip) return '';
     const sipNum = Number(urlSip);
     const yrNum = Number(urlYears);
@@ -74,7 +78,7 @@ export function ConsultationForm() {
     return Number.isFinite(yrNum) && yrNum > 0
       ? `Interested in discussing a monthly SIP of ${formatINR(sipNum)} over ${yrNum} years.`
       : `Interested in discussing a monthly SIP of ${formatINR(sipNum)}.`;
-  }, [locale, urlSip, urlYears]);
+  }, [locale, urlNote, urlSip, urlYears]);
 
   const [submitState, setSubmitState] = React.useState<{
     status: 'idle' | 'success' | 'serverError' | 'rateLimited';

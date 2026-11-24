@@ -13,7 +13,6 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
-import { SipGoalIllustrator } from '@/components/sections/SipGoalIllustrator';
 import { ConsultationBanner } from '@/components/sections/ConsultationBanner';
 
 export async function generateMetadata({
@@ -112,12 +111,12 @@ export default async function ServicesPage({
               {pillar.title}
             </a>
           ))}
-          <a
-            href="#sip-illustrator"
+          <Link
+            href="/calculators"
             className="inline-flex min-h-[40px] items-center rounded-lg border border-[var(--color-growth-text)]/30 bg-[var(--color-growth-soft)] px-3.5 py-1.5 text-sm font-semibold text-[var(--color-growth-pill-text)] transition-colors hover:bg-[#DCF1D9]"
           >
             {t('jumpCalculator')}
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -216,7 +215,6 @@ export default async function ServicesPage({
         })}
       </div>
 
-      <SipGoalIllustrator />
       <ConsultationBanner />
     </>
   );

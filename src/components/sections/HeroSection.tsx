@@ -3,7 +3,6 @@ import {
   ArrowRight,
   CheckCircle,
   Phone,
-  Translate,
 } from '@phosphor-icons/react/dist/ssr';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
@@ -23,15 +22,8 @@ export async function HeroSection() {
 
   return (
     <section className="border-b border-[var(--color-border)] bg-[var(--color-card)]">
-      <HeroMotion className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:py-16">
+      <HeroMotion className="mx-auto grid max-w-[1200px] grid-cols-1 items-start gap-10 px-4 py-8 sm:px-6 sm:py-10 lg:grid-cols-12 lg:gap-12 lg:py-12">
         <div className="bilingual-flow lg:col-span-7">
-          <div data-hero-item>
-            <Badge variant="primary" className="mb-4">
-              <Translate size={16} weight="regular" aria-hidden="true" />
-              <span>{t('badge')}</span>
-            </Badge>
-          </div>
-
           <h1
             data-hero-item
             className="heading-balance max-w-[22ch] text-3xl font-bold text-[var(--color-secondary)] sm:text-4xl lg:text-[44px]"

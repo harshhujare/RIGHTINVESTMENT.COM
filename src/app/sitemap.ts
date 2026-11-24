@@ -3,7 +3,7 @@ import { routing } from '@/i18n/routing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://rightinvestment.in';
-  const routes = ['', '/services', '/about', '/consultation', '/disclosures', '/privacy'];
+  const routes = ['', '/services', '/calculators', '/about', '/consultation', '/disclosures', '/privacy'];
 
   const entries: MetadataRoute.Sitemap = [];
   for (const locale of routing.locales) {

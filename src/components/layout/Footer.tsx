@@ -75,6 +75,14 @@ export async function Footer() {
               </li>
               <li>
                 <Link
+                  href="/calculators"
+                  className="inline-flex min-h-[36px] items-center text-[var(--color-on-brand-muted)] transition-colors hover:text-white"
+                >
+                  {nav('calculators')}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about"
                   className="inline-flex min-h-[36px] items-center text-[var(--color-on-brand-muted)] transition-colors hover:text-white"
                 >

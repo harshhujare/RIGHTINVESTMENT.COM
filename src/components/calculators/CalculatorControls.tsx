@@ -523,6 +523,7 @@ interface KpiCardProps {
   value: string;
   subtext?: string;
   tone?: 'neutral' | 'primary' | 'growth' | 'warning';
+  size?: 'hero' | 'large' | 'default';
 }
 
 export function KpiCard({
@@ -530,12 +531,13 @@ export function KpiCard({
   value,
   subtext,
   tone = 'neutral',
+  size = 'default',
 }: KpiCardProps) {
   const toneClasses = {
-    neutral: 'border-[var(--color-border)] bg-[var(--color-background)]',
-    primary: 'border-[var(--color-primary)]/25 bg-[var(--color-primary-soft)]',
-    growth: 'border-[var(--color-growth-text)]/25 bg-[var(--color-growth-soft)]/80',
-    warning: 'border-[var(--color-destructive)]/25 bg-[var(--color-destructive-soft)]/80',
+    neutral: 'border-[var(--color-border)] bg-[var(--color-card)]',
+    primary: 'border-[var(--color-primary)]/30 bg-[var(--color-primary-soft)]',
+    growth: 'border-[var(--color-growth-text)]/30 bg-[var(--color-growth-soft)]',
+    warning: 'border-[var(--color-destructive)]/30 bg-[var(--color-destructive-soft)]',
   }[tone];
 
   const labelClasses = {
@@ -552,14 +554,34 @@ export function KpiCard({
     warning: 'text-[var(--color-destructive)]',
   }[tone];
 
+  const sizeValueClasses = {
+    hero: 'text-3xl sm:text-4xl tracking-tight',
+    large: 'text-2xl sm:text-[26px] tracking-tight',
+    default: 'text-lg sm:text-xl',
+  }[size];
+
   return (
-    <div className={cn('rounded-xl border p-4', toneClasses)}>
-      <p className={cn('text-xs font-semibold', labelClasses)}>{label}</p>
-      <p className={cn('numeric-tabular mt-1 text-lg font-bold sm:text-xl', valueClasses)}>
+    <div
+      className={cn(
+        'rounded-xl border shadow-[var(--shadow-sm)]',
+        size === 'hero' ? 'p-5 sm:p-6' : 'p-4 sm:p-5',
+        toneClasses,
+      )}
+    >
+      <p
+        className={cn(
+          'font-semibold',
+          size === 'hero' ? 'text-xs sm:text-sm uppercase tracking-wider' : 'text-xs sm:text-sm',
+          labelClasses,
+        )}
+      >
+        {label}
+      </p>
+      <p className={cn('numeric-tabular mt-1.5 font-bold', sizeValueClasses, valueClasses)}>
         {value}
       </p>
       {subtext && (
-        <p className="numeric-tabular mt-1 text-xs text-[var(--color-muted-foreground)]">
+        <p className="numeric-tabular mt-1.5 text-xs sm:text-sm text-[var(--color-muted-foreground)]">
           {subtext}
         </p>
       )}
@@ -586,7 +608,7 @@ export function ChartContainer({
 
   return (
     <div
-      className="h-[280px] w-full rounded-xl border border-[var(--color-border)] bg-white p-3"
+      className="h-[300px] w-full rounded-xl border border-[var(--color-border)] bg-white p-3"
       role="img"
       aria-label={ariaLabel}
     >
@@ -603,131 +625,156 @@ export function ChartContainer({
   );
 }
 
-interface ChartLegendItem {
+export interface ChartLegendItem {
   label: string;
   color: string;
   dashed?: boolean;
 }
 
-interface YearlyTableToggleProps {
+export interface BreakdownTableProps {
   id: string;
-  legendItems?: ChartLegendItem[];
+  title?: string;
   headers: string[];
   rows: Array<{ key: string | number; cells: Array<string | number>; highlightCol?: number }>;
-  chartNode?: React.ReactNode;
 }
 
-export function ChartAndTablePanel({
-  id,
-  legendItems = [],
-  headers,
-  rows,
-  chartNode,
-}: YearlyTableToggleProps) {
-  const [showTable, setShowTable] = React.useState(false);
-
-  return (
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex flex-wrap items-center gap-4 text-xs font-medium text-[var(--color-foreground)]">
-          {legendItems.map((item) => (
-            <span key={item.label} className="inline-flex items-center gap-2">
-              <span
-                aria-hidden="true"
-                className="inline-block h-0.5 w-6"
-                style={{
-                  backgroundColor: item.dashed ? 'transparent' : item.color,
-                  borderTop: item.dashed ? `2px dashed ${item.color}` : undefined,
-                }}
-              />
-              <span>{item.label}</span>
-            </span>
-          ))}
-        </div>
-
-        <Button
-          type="button"
-          variant="ghost"
-          size="sm"
-          aria-expanded={showTable}
-          aria-controls={id}
-          onClick={() => setShowTable((prev) => !prev)}
-          className="border border-[var(--color-border)] text-xs font-semibold"
-        >
-          <Table size={16} weight="regular" aria-hidden="true" />
-          <span>{showTable ? 'Hide Year-by-Year Table' : 'Show Year-by-Year Table'}</span>
-        </Button>
-      </div>
-
-      {chartNode}
-
-      {showTable && (
-        <div
-          id={id}
-          data-lenis-prevent
-          className="animate-subtle-enter max-h-72 overflow-auto rounded-xl border border-[var(--color-border)]"
-        >
-          <table className="w-full border-collapse text-left text-sm">
-            <thead className="sticky top-0 bg-[var(--color-muted)] text-xs font-semibold text-[var(--color-secondary)]">
-              <tr>
-                {headers.map((header, idx) => (
-                  <th
-                    key={header}
-                    scope="col"
-                    className={cn('px-4 py-2.5', idx > 0 && 'text-right')}
-                  >
-                    {header}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[var(--color-border)] bg-white">
-              {rows.map((row) => (
-                <tr key={row.key}>
-                  {row.cells.map((cell, idx) => (
-                    <td
-                      key={`${row.key}-${idx}`}
-                      className={cn(
-                        'numeric-tabular px-4 py-2',
-                        idx === 0 ? 'font-medium text-[var(--color-secondary)]' : 'text-right',
-                        row.highlightCol === idx && 'font-semibold text-[var(--color-growth-text)]',
-                      )}
-                    >
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </div>
-  );
-}
-
-interface CalculatorFooterCtaProps {
+export interface FourSectionLayoutProps {
+  inputs: React.ReactNode;
+  results: React.ReactNode;
+  chartTitle?: string;
+  legendItems?: ChartLegendItem[];
+  chartNode: React.ReactNode;
+  table: BreakdownTableProps;
   onReset: () => void;
   disclaimer?: string;
 }
 
-export function CalculatorFooterCta({
+export function CalculatorFourSectionLayout({
+  inputs,
+  results,
+  chartTitle = 'Interactive Visual Breakdown',
+  legendItems = [],
+  chartNode,
+  table,
   onReset,
   disclaimer = 'For educational illustration only. Calculated values use standard compound interest formulas at your chosen assumptions and do not guarantee future returns. Mutual Fund investments are subject to market risks, read all scheme related documents carefully.',
-}: CalculatorFooterCtaProps) {
+}: FourSectionLayoutProps) {
   return (
-    <div className="mt-2 flex flex-col gap-4 border-t border-[var(--color-border)] pt-5">
-      <div className="flex justify-end">
-        <Button
-          type="button"
-          variant="ghost"
-          size="sm"
-          onClick={onReset}
-          className="border border-[var(--color-border)] text-xs font-semibold text-[var(--color-muted-foreground)]"
-        >
-          <ArrowCounterClockwise size={15} weight="bold" aria-hidden="true" />
-          <span>Reset Defaults</span>
-        </Button>
+    <div className="flex flex-col gap-8">
+      {/* UPPER ROW: Section 1 (Inputs) + Section 2 (Large Highlighted Results) */}
+      <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
+        {/* Section 1: Inputs */}
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center justify-between border-b border-[var(--color-border)] pb-2.5">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+              1. Input Parameters
+            </h3>
+            <Button
+              type="button"
+              variant="ghost"
+              size="sm"
+              onClick={onReset}
+              className="min-h-[34px] border border-[var(--color-border)] px-3 py-1 text-xs font-semibold text-[var(--color-muted-foreground)]"
+            >
+              <ArrowCounterClockwise size={14} weight="bold" aria-hidden="true" />
+              <span>Reset</span>
+            </Button>
+          </div>
+          {inputs}
+        </div>
+
+        {/* Section 2: Big Highlighted Results */}
+        <div className="flex flex-col gap-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-background)] p-5 sm:p-6">
+          <div className="flex items-center justify-between border-b border-[var(--color-border)] pb-2.5">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--color-primary)]">
+              2. Calculation Results
+            </h3>
+          </div>
+          {results}
+        </div>
+      </div>
+
+      {/* BOTTOM ROW: Section 3 (Chart) + Section 4 (Year-by-Year Table) */}
+      <div className="grid grid-cols-1 gap-6 border-t border-[var(--color-border)] pt-8 lg:grid-cols-2">
+        {/* Section 3: Interactive Chart */}
+        <div className="flex flex-col gap-3 rounded-2xl border border-[var(--color-border)] bg-[var(--color-background)] p-4 sm:p-5">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--color-secondary)]">
+              3. {chartTitle}
+            </h3>
+            {legendItems.length > 0 && (
+              <div className="flex flex-wrap items-center gap-3 text-xs font-medium text-[var(--color-foreground)]">
+                {legendItems.map((item) => (
+                  <span key={item.label} className="inline-flex items-center gap-1.5">
+                    <span
+                      aria-hidden="true"
+                      className="inline-block h-0.5 w-5"
+                      style={{
+                        backgroundColor: item.dashed ? 'transparent' : item.color,
+                        borderTop: item.dashed ? `2px dashed ${item.color}` : undefined,
+                      }}
+                    />
+                    <span>{item.label}</span>
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+          {chartNode}
+        </div>
+
+        {/* Section 4: Year-by-Year Table */}
+        <div className="flex flex-col gap-3 rounded-2xl border border-[var(--color-border)] bg-[var(--color-background)] p-4 sm:p-5">
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--color-secondary)]">
+              <Table size={15} weight="regular" aria-hidden="true" />
+              <span>4. {table.title ?? 'Year-by-Year Breakdown'}</span>
+            </h3>
+            <span className="numeric-tabular text-xs font-medium text-[var(--color-muted-foreground)]">
+              {table.rows.length} {table.rows.length === 1 ? 'row' : 'rows'}
+            </span>
+          </div>
+
+          <div
+            id={table.id}
+            data-lenis-prevent
+            className="h-[300px] overflow-auto rounded-xl border border-[var(--color-border)] bg-white"
+          >
+            <table className="w-full border-collapse text-left text-xs sm:text-sm">
+              <thead className="sticky top-0 z-10 bg-[var(--color-muted)] text-xs font-semibold text-[var(--color-secondary)]">
+                <tr>
+                  {table.headers.map((header, idx) => (
+                    <th
+                      key={header}
+                      scope="col"
+                      className={cn('px-3 py-2.5 whitespace-nowrap', idx > 0 && 'text-right')}
+                    >
+                      {header}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[var(--color-border)] bg-white">
+                {table.rows.map((row) => (
+                  <tr key={row.key} className="hover:bg-[var(--color-background)]/60">
+                    {row.cells.map((cell, idx) => (
+                      <td
+                        key={`${row.key}-${idx}`}
+                        className={cn(
+                          'numeric-tabular px-3 py-2 whitespace-nowrap',
+                          idx === 0 ? 'font-medium text-[var(--color-secondary)]' : 'text-right',
+                          row.highlightCol === idx && 'font-semibold text-[var(--color-growth-text)]',
+                        )}
+                      >
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
 
       <p className="rounded-lg bg-[var(--color-muted)] px-4 py-3 text-xs leading-relaxed text-[var(--color-muted-foreground)]">
